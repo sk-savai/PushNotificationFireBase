@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "582621358181",
+    "project_id": "fcmdata-c7270",
+    "storage_bucket": "fcmdata-c7270.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582621358181:android:a019b535edc6d14de43e8c",
+        "android_client_info": {
+          "package_name": "com.example.roomdatabaseapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582621358181-0lv0f4cab2jj33gebmoodrvkfqe4o7bt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq5jQOnDCQvyfNDZYV0_auAPfxNbM2dlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582621358181-0lv0f4cab2jj33gebmoodrvkfqe4o7bt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
