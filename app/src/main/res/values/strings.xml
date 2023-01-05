@@ -6,4 +6,5 @@
     <string name="tittle">Tittle</string>
     <string name="message">Message</string>
     <string name="this_is_firebase_notification_demo_task">This is Firebase Notification Demo Task</string>
+    <string name="signin">SignIn</string>
 </resources>
