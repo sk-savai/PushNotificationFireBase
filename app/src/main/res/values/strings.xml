@@ -3,4 +3,7 @@
     <string name="id">id</string>
     <string name="name">Name</string>
     <string name="todo">Todo</string>
+    <string name="tittle">Tittle</string>
+    <string name="message">Message</string>
+    <string name="this_is_firebase_notification_demo_task">This is Firebase Notification Demo Task</string>
 </resources>

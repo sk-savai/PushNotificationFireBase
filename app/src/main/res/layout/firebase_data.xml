@@ -14,19 +14,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="25sp"
         android:textColor="@color/black"
-        android:text="Tittle"/>
+        android:text="@string/tittle"/>
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tvMessage"
         app:layout_constraintTop_toBottomOf="@id/tvTittle"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="25sp"
         android:textColor="@color/black"
-        android:text="Message"/>
+        android:text="@string/message"/>
 
 
 

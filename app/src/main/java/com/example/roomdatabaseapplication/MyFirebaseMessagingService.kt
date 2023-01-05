@@ -26,13 +26,9 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     @SuppressLint("UnspecifiedImmutableFlag")
     private fun fireBase(tittle:String, message:String){
-
-        val intent=Intent(this,MainActivity::class.java)
+        val intent=Intent(this,FireBaseActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-
         val pendingIndent=PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_ONE_SHOT)
-
-
 
         var builder:NotificationCompat.Builder=NotificationCompat.Builder(this, channelId)
             .setSmallIcon(R.drawable.weather)
@@ -41,21 +37,16 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             .setVibrate(longArrayOf(1000,1000,1000,1000))
             .setContentIntent(pendingIndent)
 
-
-
         builder=builder.setContent(getRemoteView(tittle,message))
         val notificationManger=getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
         if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.O){
-
             val notificationChanel=NotificationChannel(channelId, channelName,NotificationManager.IMPORTANCE_HIGH)
             notificationManger.createNotificationChannel(notificationChanel)
         }
-
         notificationManger.notify(0,builder.build())
 
     }
-
     @SuppressLint("RemoteViewLayout")
     private fun getRemoteView(tittle: String, message: String): RemoteViews {
         val remoteView=RemoteViews("package com.example.roomdatabaseapplication",R.layout.activity_fire_base)
